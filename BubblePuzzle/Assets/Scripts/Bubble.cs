@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Bubble : MonoBehaviour
+public class Bubble : MonoBehaviour
 {
-    public abstract void OnTouchedWave();
+    //public abstract void OnTouchedWave();
+
+    public void TemplateOnTouched()
+    {
+        Destroy(gameObject);
+    }
 }

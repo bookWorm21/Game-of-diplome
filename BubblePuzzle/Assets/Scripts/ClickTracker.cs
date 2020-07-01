@@ -2,49 +2,64 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ClickTracker : MonoBehaviour
 {
-    [SerializeField] private float _clickTime;
+    [SerializeField] private float _activationTime;
     [SerializeField] private Wave _wave;
 
+    [SerializeField] LayerMask _layerMask;
+
     private float _timeLastClick;
-    private Touch _touch;
 
     private void Update()
     {
-        if (Input.touchCount > 0)
+        if(Input.touchCount > 0)
         {
-            Touch _touch = Input.GetTouch(0);
+            Touch touch = Input.GetTouch(0);
 
-            if (_touch.phase == TouchPhase.Began)
-            {
-                _timeLastClick = 0;
-            }
-
-            if (_touch.phase == TouchPhase.Stationary)
+            if(touch.phase == TouchPhase.Stationary)
             {
                 _timeLastClick += Time.deltaTime;
             }
 
-            if(_touch.phase == TouchPhase.Ended)
+            if(touch.phase == TouchPhase.Ended && _timeLastClick >= _activationTime)
             {
                 _wave.OnEndClick();
+                _timeLastClick = 0;
                 _wave.gameObject.SetActive(false);
             }
 
-            if(_timeLastClick >= _clickTime)
+            if (_timeLastClick >= _activationTime)
             {
-                ActivateWave();
+                var point = Camera.main.ScreenToWorldPoint(touch.position);
+                if (GetFirstBubbleUnderTouch(point))
+                {
+                    ActivatedWave(point);
+                }
             }
         }
     }
 
-    private void ActivateWave()
+    private void ActivatedWave(Vector3 point)
     {
-        Debug.Log("wave active");
         _wave.gameObject.SetActive(true);
-        _wave.gameObject.transform.position = _touch.position;
+        _wave.gameObject.transform.position = new Vector3(point.x, point.y, 0f);
         _wave.TryIncreaseScall();
+    }
+
+    private bool GetFirstBubbleUnderTouch(Vector3 point)
+    {
+        var pointer = new Vector2(point.x, point.y);
+
+        if (Physics2D.Raycast(pointer, Vector2.zero, 0f, _layerMask))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
