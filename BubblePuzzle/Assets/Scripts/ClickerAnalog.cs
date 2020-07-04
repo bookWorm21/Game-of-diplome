@@ -10,6 +10,7 @@ public class ClickerAnalog : MonoBehaviour
     [SerializeField] private Wave _wave;
 
     [SerializeField] LayerMask _layerMask;
+    [SerializeField] ContactFilter2D _contactFilter;
 
     private float _timeLastClick;
     private bool _isPress = false;
@@ -29,9 +30,9 @@ public class ClickerAnalog : MonoBehaviour
             {
                 var point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-                if (GetFirstBubbleUnderTouch(point))
+                if (GetFirstBubbleUnderTouch(point, out Vector3 bubblePoint))
                 {
-                    ActivatedWave(point);
+                    ActivatedWave(bubblePoint);
                 }
             }
         }
@@ -51,23 +52,26 @@ public class ClickerAnalog : MonoBehaviour
         }
     }
 
-    private void ActivatedWave(Vector3 point)
+    private void ActivatedWave(Vector2 point)
     {
         _wave.gameObject.SetActive(true);
         _wave.gameObject.transform.position = new Vector3(point.x, point.y, 0);
         _wave.TryIncreaseScall();
     }
 
-    private bool GetFirstBubbleUnderTouch(Vector3 point)
+    private bool GetFirstBubbleUnderTouch(Vector3 point, out Vector3 _bubblePoint)
     {
         var pointer = new Vector2(point.x, point.y);
+        RaycastHit2D[] results = new RaycastHit2D[1];
 
-        if (Physics2D.Raycast(pointer, Vector2.zero, 0f, _layerMask))
+        if (Physics2D.Raycast(new Vector2(point.x, point.y), Vector2.zero, _contactFilter, results) > 0)
         {
+            _bubblePoint = results[0].transform.position;
             return true;
         }
         else
         {
+            _bubblePoint = Vector2.zero;
             return false;
         }
     }
