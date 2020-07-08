@@ -55,6 +55,7 @@ public class Wave : MonoBehaviour
         _currentSystem.OnDisableCurrentWave();
         _isPossibilityIncrease = true;
         _transform.localScale = _startScale;
+        this.gameObject.SetActive(false);
         _bubblesInCircle.Clear();
     }
 

@@ -9,4 +9,14 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(number);
     }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void OnClickExitButton()
+    {
+        Application.Quit();
+    }
 }

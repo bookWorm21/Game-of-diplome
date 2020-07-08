@@ -45,7 +45,7 @@ public class ClickerAnalog : MonoBehaviour
             {
                 _wave.OnEndClick();
                 _timeLastClick = 0;
-                _wave.gameObject.SetActive(false); 
+                //_wave.gameObject.SetActive(false); 
             }
 
             _timeLastClick = 0;
