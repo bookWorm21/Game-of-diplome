@@ -13,7 +13,7 @@ public class Wave : MonoBehaviour
     private Bubble _touchedBubble;
     private List<Bubble> _bubblesInCircle = new List<Bubble>();
 
-    private void OnEnable()
+    private void Awake()
     {
         _transform = GetComponent<Transform>();
         _startScale = _transform.localScale;

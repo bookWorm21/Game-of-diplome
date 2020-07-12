@@ -68,14 +68,17 @@
     <Compile Include="Assets\Scripts\Bubble\Mortal.cs" />
     <Compile Include="Assets\Scripts\Bubble\Sparing.cs" />
     <Compile Include="Assets\Scripts\Bubble\Userful.cs" />
-    <Compile Include="Assets\Scripts\ClickTracker.cs" />
-    <Compile Include="Assets\Scripts\ClickerAnalog.cs" />
     <Compile Include="Assets\Scripts\Magnifier.cs" />
-    <Compile Include="Assets\Scripts\ScoreAndLivesSystem.cs" />
+    <Compile Include="Assets\Scripts\System\ClickTracker.cs" />
+    <Compile Include="Assets\Scripts\System\ClickerAnalog.cs" />
+    <Compile Include="Assets\Scripts\System\EndLevelHundler.cs" />
+    <Compile Include="Assets\Scripts\System\ScoreAndLivesSystem.cs" />
     <Compile Include="Assets\Scripts\UI\GameMenuButtons.cs" />
     <Compile Include="Assets\Scripts\UI\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\UI\LivesBar.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
     <None Include="Assets\Fonts\Documentation\JazzCreateAltKeys_BubbleFont.txt" />
+    <None Include="Assets\DownoloadMusor\UI\Makaka Games\Mobile Game Icon Pack\Fonts\Font_Read_Me.txt" />
     <None Include="Assets\Fonts\Documentation\JazzCreateBubble_VersionHistory_1.1.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/freeTime/Program/Utiliti/GameDev/Unity/GameOfDiplome/BubblePuzzle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

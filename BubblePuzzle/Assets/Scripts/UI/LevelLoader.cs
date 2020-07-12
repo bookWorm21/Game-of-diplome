@@ -9,6 +9,21 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene(number);
     }
+    
+    public void NextLevel()
+    {
+        int sceneCount = SceneManager.sceneCount;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if(currentSceneIndex < sceneCount - 1)
+        {
+            SceneManager.LoadScene(currentSceneIndex + 1);
+        }
+        else
+        {
+            Debug.Log("Last level"); // fixe this
+        }
+    }
 
     public void RestartLevel()
     {
