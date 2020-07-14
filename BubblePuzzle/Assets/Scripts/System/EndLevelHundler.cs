@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
-using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class EndLevelHundler : MonoBehaviour
 {
     [SerializeField] private GameObject _gameOverPanel;
     [SerializeField] private GameObject _gameWinPanel;
+    [SerializeField] private GameObject _allLevelsCompletedPanel;
 
     [SerializeField] private ScoreAndLivesSystem _currentSystem;
 
@@ -25,8 +27,20 @@ public class EndLevelHundler : MonoBehaviour
         Time.timeScale = 0;
 
         if (isWin)
-            _gameWinPanel.SetActive(true);
+        {
+            if (SavingPassedLevel.GetCountLevels() == SavingPassedLevel.GetPassedLevels() + 1)
+            {
+                _allLevelsCompletedPanel.SetActive(true);
+            }
+            else
+            { 
+                _gameWinPanel.SetActive(true);
+                SavingPassedLevel.OnLevelComplete(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
         else
+        {
             _gameOverPanel.SetActive(true);
+        }
     }
 }

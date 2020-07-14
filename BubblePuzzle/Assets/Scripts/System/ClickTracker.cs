@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class ClickTracker : MonoBehaviour
 {
@@ -13,7 +9,9 @@ public class ClickTracker : MonoBehaviour
     [SerializeField] ContactFilter2D _contactFilter;
 
     private float _timeLastClick;
-    private Vector3 _lastTouchPosition = Vector3.zero;
+    private bool _isWaveActive = false;
+
+    private Vector3 _bubblePoint;
 
     private void Update()
     {
@@ -23,27 +21,28 @@ public class ClickTracker : MonoBehaviour
 
             if(touch.phase == TouchPhase.Stationary)
             {
-                _timeLastClick += Time.deltaTime;
+                if (_isWaveActive)
+                {
+                    _timeLastClick += Time.deltaTime;
+                }
+                else
+                {
+                    var point = Camera.main.ScreenToWorldPoint(touch.position);
+                    _isWaveActive = GetFirstBubbleUnderTouch(point, out _bubblePoint);
+                }
             }
 
-            if((touch.phase == TouchPhase.Ended || touch.deltaPosition.magnitude > 1f) && _timeLastClick >= _activationTime)
+            if((touch.phase == TouchPhase.Ended || touch.deltaPosition.magnitude > 15f) && _timeLastClick >= _activationTime)
             {
                 _wave.OnEndClick();
                 _timeLastClick = 0;
-                //_wave.gameObject.SetActive(false);
+                _isWaveActive = false;
             }
 
             if (_timeLastClick >= _activationTime)
             {
-                var point = Camera.main.ScreenToWorldPoint(touch.position);
-
-                if (GetFirstBubbleUnderTouch(point, out Vector3 bubblePoint))
-                {
-                    ActivatedWave(bubblePoint);
-                }
+                ActivatedWave(_bubblePoint);
             }
-
-            _lastTouchPosition = touch.position;
         }
     }
 

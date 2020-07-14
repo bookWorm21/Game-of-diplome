@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &506167265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +267,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506167263}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -297,7 +298,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 506167266}
   m_OnClick:
     m_PersistentCalls:
@@ -326,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -492,6 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &567825298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,7 +501,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567825295}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -530,7 +532,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 567825299}
   m_OnClick:
     m_PersistentCalls:
@@ -559,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -633,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &716066679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +643,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716066676}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -671,7 +674,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 716066680}
   m_OnClick:
     m_PersistentCalls:
@@ -700,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -986,6 +989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &884853439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,7 +997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884853436}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -1024,7 +1028,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 884853440}
   m_OnClick:
     m_PersistentCalls:
@@ -1053,7 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1088,7 +1092,6 @@ GameObject:
   - component: {fileID: 917466479}
   - component: {fileID: 917466478}
   - component: {fileID: 917466477}
-  - component: {fileID: 917466476}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1116,18 +1119,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000024796, y: -330.5}
   m_SizeDelta: {x: 422, y: 137.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &917466476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917466474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &917466477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,7 +1162,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 917466476}
+      - m_Target: {fileID: 1370413496}
         m_MethodName: OnClickExitButton
         m_Mode: 1
         m_Arguments:
@@ -1654,7 +1645,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1212918118}
   m_OnClick:
     m_PersistentCalls:
@@ -1718,6 +1709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!1 &1251595485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1721,7 @@ GameObject:
   - component: {fileID: 1251595486}
   - component: {fileID: 1251595488}
   - component: {fileID: 1251595487}
+  - component: {fileID: 1251595489}
   m_Layer: 5
   m_Name: ChooseLevelsPanel
   m_TagString: Untagged
@@ -1794,6 +1787,73 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251595485}
   m_CullTransparentMesh: 0
+--- !u!114 &1251595489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251595485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58808a92f41c09439e67bb7c2824572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelsButtons:
+  - {fileID: 1212918117}
+  - {fileID: 1594405889}
+  - {fileID: 567825298}
+  - {fileID: 1841492847}
+  - {fileID: 716066679}
+  - {fileID: 1813844189}
+  - {fileID: 884853439}
+  - {fileID: 506167265}
+  - {fileID: 2145301933}
+  _savingPassedLevel: {fileID: 2017160993}
+--- !u!1 &1370413495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1370413497}
+  - component: {fileID: 1370413496}
+  m_Layer: 0
+  m_Name: ScriptsContains
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1370413496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370413495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 2017160993}
+--- !u!4 &1370413497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370413495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 126.23966, y: 949.49274, z: -376.1914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1423044502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,8 +1888,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: -20.8}
-  m_SizeDelta: {x: 2045.4, y: 2196.9}
+  m_AnchoredPosition: {x: 99, y: -17.6}
+  m_SizeDelta: {x: 2244.5, y: 2410.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423044504
 MonoBehaviour:
@@ -1918,6 +1978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &1594405889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1925,7 +1986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594405886}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -1956,7 +2017,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1594405890}
   m_OnClick:
     m_PersistentCalls:
@@ -1985,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2346,6 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &1813844189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2353,7 +2415,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813844186}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2384,7 +2446,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1813844190}
   m_OnClick:
     m_PersistentCalls:
@@ -2413,7 +2475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2487,6 +2549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &1841492847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2494,7 +2557,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841492844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2525,7 +2588,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1841492848}
   m_OnClick:
     m_PersistentCalls:
@@ -2554,7 +2617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2698,6 +2761,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973753205}
   m_CullTransparentMesh: 0
+--- !u!1 &2017160992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2017160994}
+  - component: {fileID: 2017160993}
+  m_Layer: 0
+  m_Name: Saving
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2017160993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017160992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587422ab29d17d04e9d7a31060fe3eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2017160994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017160992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -334.89075, y: 798.75244, z: -590.0875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026769208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,6 +2932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e321aa4193ecaa41aff9553a04bab97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _savingPassedLevel: {fileID: 0}
 --- !u!114 &2145301933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2833,7 +2940,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145301930}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -2864,7 +2971,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2145301934}
   m_OnClick:
     m_PersistentCalls:
@@ -2893,7 +3000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 0.5686275}
+  m_Color: {r: 0.9811321, g: 0.75627965, b: 0.43040225, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    [SerializeField] private SavingPassedLevel _savingPassedLevel;
+
     public void LoadLevel(int number)
     {
         SceneManager.LoadScene(number);
@@ -12,11 +14,12 @@ public class LevelLoader : MonoBehaviour
     
     public void NextLevel()
     {
-        int sceneCount = SceneManager.sceneCount;
+        int sceneCount = SceneManager.sceneCountInBuildSettings;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-        if(currentSceneIndex < sceneCount - 1)
+        if(currentSceneIndex < sceneCount)
         {
+            SavingPassedLevel.OnLevelComplete(SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
         else
@@ -32,6 +35,7 @@ public class LevelLoader : MonoBehaviour
 
     public void OnClickExitButton()
     {
+        _savingPassedLevel.OnExit();
         Application.Quit();
     }
 }

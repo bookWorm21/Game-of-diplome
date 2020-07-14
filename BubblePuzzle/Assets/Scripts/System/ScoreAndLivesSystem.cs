@@ -11,7 +11,7 @@ public class ScoreAndLivesSystem : MonoBehaviour
     public event UnityAction<bool> OnEndLevel;
 
     [SerializeField] private int _maxLives;
-    [SerializeField] private Text _forTest;
+    [SerializeField] private Text _scoreLabel;
 
     private int _currentLives;
 
@@ -25,9 +25,9 @@ public class ScoreAndLivesSystem : MonoBehaviour
     private void Start()
     {
         _multiplier = 1;
-        _currentLives = _maxLives - 2;
+        _currentLives = _maxLives - 1;
         _score = 0;
-        _forTest.text = _score.ToString();
+        _scoreLabel.text = _score.ToString();
 
         OnLivesChanged?.Invoke(_currentLives);
 
@@ -85,7 +85,7 @@ public class ScoreAndLivesSystem : MonoBehaviour
         }
 
         _touchUnUserfulBubble = false;
-        _forTest.text = _score.ToString();
+        _scoreLabel.text = _score.ToString();
         _multiplier = 1;
 
     }
