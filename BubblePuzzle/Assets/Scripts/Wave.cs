@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
-    [SerializeField] private ScoreAndLivesSystem _currentSystem;
+    [SerializeField] private ScoreAndLivesCounter _currentSystem;
 
     private bool _isPossibilityIncrease = true;
     private Transform _transform;
@@ -55,7 +55,7 @@ public class Wave : MonoBehaviour
         _currentSystem.OnDisableCurrentWave();
         _isPossibilityIncrease = true;
         _transform.localScale = _startScale;
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         _bubblesInCircle.Clear();
     }
 

@@ -10,7 +10,7 @@ public class EndLevelHundler : MonoBehaviour
     [SerializeField] private GameObject _gameWinPanel;
     [SerializeField] private GameObject _allLevelsCompletedPanel;
 
-    [SerializeField] private ScoreAndLivesSystem _currentSystem;
+    [SerializeField] private ScoreAndLivesCounter _currentSystem;
 
     private void OnEnable()
     {
@@ -33,9 +33,9 @@ public class EndLevelHundler : MonoBehaviour
                 _allLevelsCompletedPanel.SetActive(true);
             }
             else
-            { 
+            {
+                SavingPassedLevel.OnLevelComplete(SceneManager.GetActiveScene().buildIndex + 1);
                 _gameWinPanel.SetActive(true);
-                SavingPassedLevel.OnLevelComplete(SceneManager.GetActiveScene().buildIndex);
             }
         }
         else

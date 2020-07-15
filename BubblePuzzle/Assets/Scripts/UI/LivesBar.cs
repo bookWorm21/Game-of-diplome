@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LivesBar : MonoBehaviour
 {
-    [SerializeField] private ScoreAndLivesSystem _liveSystem;
+    [SerializeField] private ScoreAndLivesCounter _liveSystem;
     [SerializeField] private GameObject[] _hearts;
 
     private void OnEnable()

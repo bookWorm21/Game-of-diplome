@@ -73,8 +73,6 @@ public class SavingPassedLevels
 
     public static void OnExit()
     {
-        Debug.Log("Save");
-        Debug.Log(_countPassedLevels);
         File.WriteAllText(_path, JsonUtility.ToJson(_countPassedLevels));
     }
 }

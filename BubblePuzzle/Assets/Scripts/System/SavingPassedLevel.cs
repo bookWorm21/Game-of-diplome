@@ -50,12 +50,15 @@ public class SavingPassedLevel : MonoBehaviour
 
     public static void OnLevelComplete(int levelIndex)
     {
-        if (levelIndex >= 0 && levelIndex < _isPassedLevel.Length)
+        if (_isPassedLevel != null)
         {
-            if (_isPassedLevel[levelIndex] == false)
+            if (levelIndex >= 0 && levelIndex < _isPassedLevel.Length)
             {
-                _isPassedLevel[levelIndex] = true;
-                _countPassedLevels++;
+                if (_isPassedLevel[levelIndex] == false)
+                {
+                    _isPassedLevel[levelIndex] = true;
+                    _countPassedLevels++;
+                }
             }
         }
     }

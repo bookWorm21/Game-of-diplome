@@ -46,6 +46,7 @@ public class PhaseSelector : MonoBehaviour
         if (_currentIndex > _phaseCount - 1)
         {
             Time.timeScale = 0;
+            SavingPassedLevel.OnLevelComplete(2);
             _endLevelPanel.SetActive(true);
         }
         else

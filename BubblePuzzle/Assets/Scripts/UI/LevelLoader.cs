@@ -22,10 +22,6 @@ public class LevelLoader : MonoBehaviour
             SavingPassedLevel.OnLevelComplete(SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
-        else
-        {
-            Debug.Log("Last level"); // fixe this
-        }
     }
 
     public void RestartLevel()

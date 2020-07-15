@@ -77,7 +77,7 @@
     <Compile Include="Assets\Scripts\System\EndLevelHundler.cs" />
     <Compile Include="Assets\Scripts\System\SavingPassedLevel.cs" />
     <Compile Include="Assets\Scripts\System\SavingPassedLevels.cs" />
-    <Compile Include="Assets\Scripts\System\ScoreAndLivesSystem.cs" />
+    <Compile Include="Assets\Scripts\System\ScoreAndLivesCounter.cs" />
     <Compile Include="Assets\Scripts\UI\ChooseLevelButtons.cs" />
     <Compile Include="Assets\Scripts\UI\GameMenuButtons.cs" />
     <Compile Include="Assets\Scripts\UI\LevelLoader.cs" />

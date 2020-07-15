@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sparing : Bubble
 {
-    public override void OnTouchedWave(ScoreAndLivesSystem currentSystem)
+    public override void OnTouchedWave(ScoreAndLivesCounter currentSystem)
     {
         currentSystem.OnTouchSparingBubble();
         Destroy(gameObject);

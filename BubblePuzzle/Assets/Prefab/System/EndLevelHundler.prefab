@@ -46,4 +46,5 @@ MonoBehaviour:
   _gameOverPanel: {fileID: 0}
   _gameWinPanel: {fileID: 0}
   _allLevelsCompletedPanel: {fileID: 0}
-  _currentSystem: {fileID: 0}
+  _currentSystem: {fileID: 1163014398195775781, guid: 5e240c36dad94dc46a85e6bffc903b6c,
+    type: 3}
