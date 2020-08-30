@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
-    [SerializeField] private ScoreAndLivesCounter _currentSystem;
+    [SerializeField] private TouchedBallsHundler _currentSystem;
+
+    [SerializeField] private float _magnifierRate;
 
     private bool _isPossibilityIncrease = true;
-    private Transform _transform;
     private Vector3 _startScale;
 
     private Bubble _touchedBubble;
@@ -15,14 +16,13 @@ public class Wave : MonoBehaviour
 
     private void Awake()
     {
-        _transform = GetComponent<Transform>();
-        _startScale = _transform.localScale;
+        _startScale = transform.localScale;
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.TryGetComponent(out Wall walll))
         {
             _isPossibilityIncrease = false;
         }
@@ -39,7 +39,9 @@ public class Wave : MonoBehaviour
     public void TryIncreaseScall()
     {
         if (_isPossibilityIncrease)
-            StartCoroutine(IncreaseScall());
+        {
+            IncreaseScall();
+        }
     }
 
     public void OnEndClick()
@@ -54,15 +56,14 @@ public class Wave : MonoBehaviour
 
         _currentSystem.OnDisableCurrentWave();
         _isPossibilityIncrease = true;
-        _transform.localScale = _startScale;
+        transform.localScale = _startScale;
         gameObject.SetActive(false);
         _bubblesInCircle.Clear();
     }
 
-    private IEnumerator IncreaseScall()
+    private void IncreaseScall()
     {
-        _transform.localScale *= 1.013f;
-        yield return new WaitForSeconds(0.1f);
+        transform.localScale *= _magnifierRate;
     }
 }
 

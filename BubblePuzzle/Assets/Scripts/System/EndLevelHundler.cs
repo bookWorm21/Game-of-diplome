@@ -10,7 +10,7 @@ public class EndLevelHundler : MonoBehaviour
     [SerializeField] private GameObject _gameWinPanel;
     [SerializeField] private GameObject _allLevelsCompletedPanel;
 
-    [SerializeField] private ScoreAndLivesCounter _currentSystem;
+    [SerializeField] private TouchedBallsHundler _currentSystem;
 
     private void OnEnable()
     {

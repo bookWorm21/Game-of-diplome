@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2600378428464557662}
   - component: {fileID: 2600378428464557661}
   - component: {fileID: 2600378428464557660}
+  - component: {fileID: 5947053678437961363}
   m_Layer: 0
   m_Name: UpBorder
   m_TagString: Wall
@@ -79,3 +80,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5947053678437961363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600378428464557659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077035a58d0e45c43b7d92ff8bcbe58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

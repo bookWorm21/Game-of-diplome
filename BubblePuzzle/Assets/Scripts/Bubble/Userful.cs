@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Userful : Bubble
 {
-    public override void OnTouchedWave(ScoreAndLivesCounter currentSystem)
+    public override void OnTouchedWave(TouchedBallsHundler currentSystem)
     {
         currentSystem.OnTouchUserfulBubble();
         Destroy(gameObject);

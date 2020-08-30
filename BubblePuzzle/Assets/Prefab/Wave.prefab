@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentSystem: {fileID: 0}
+  _magnifierRate: 1.013
 --- !u!50 &284887202446941633
 Rigidbody2D:
   serializedVersion: 4

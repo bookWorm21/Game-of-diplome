@@ -68,7 +68,6 @@
     <Compile Include="Assets\Scripts\Bubble\Mortal.cs" />
     <Compile Include="Assets\Scripts\Bubble\Sparing.cs" />
     <Compile Include="Assets\Scripts\Bubble\Userful.cs" />
-    <Compile Include="Assets\Scripts\Magnifier.cs" />
     <Compile Include="Assets\Scripts\Studying\DeathTracking.cs" />
     <Compile Include="Assets\Scripts\Studying\PhaseSelector.cs" />
     <Compile Include="Assets\Scripts\Studying\PhaseStudying.cs" />
@@ -77,11 +76,12 @@
     <Compile Include="Assets\Scripts\System\EndLevelHundler.cs" />
     <Compile Include="Assets\Scripts\System\SavingPassedLevel.cs" />
     <Compile Include="Assets\Scripts\System\SavingPassedLevels.cs" />
-    <Compile Include="Assets\Scripts\System\ScoreAndLivesCounter.cs" />
+    <Compile Include="Assets\Scripts\System\TouchedBallsHundler.cs" />
     <Compile Include="Assets\Scripts\UI\ChooseLevelButtons.cs" />
     <Compile Include="Assets\Scripts\UI\GameMenuButtons.cs" />
     <Compile Include="Assets\Scripts\UI\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\UI\LivesBar.cs" />
+    <Compile Include="Assets\Scripts\Wall.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />
     <None Include="Assets\Fonts\Documentation\JazzCreateAltKeys_BubbleFont.txt" />
     <None Include="Assets\DownoloadMusor\UI\Makaka Games\Mobile Game Icon Pack\Fonts\Font_Read_Me.txt" />

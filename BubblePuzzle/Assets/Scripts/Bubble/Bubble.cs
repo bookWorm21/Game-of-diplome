@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class Bubble : MonoBehaviour
 {
-    public abstract void OnTouchedWave(ScoreAndLivesCounter currentSystem);
+    public abstract void OnTouchedWave(TouchedBallsHundler currentSystem);
 }
